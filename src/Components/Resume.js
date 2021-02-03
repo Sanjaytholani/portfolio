@@ -1,6 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const Resume = ({ data }) => {
+  const [isScrolled, setIsScrolled] = useState("");
+  useEffect(() => {
+    // if scrolling passed 80px from the top
+    const toggleScrolled = () => {
+      window.scrollY >= 1300 ? setIsScrolled(true) : setIsScrolled(false);
+    };
+    window.addEventListener("scroll", toggleScrolled);
+    return () => {
+      window.removeEventListener("scroll", toggleScrolled);
+    };
+  }, []);
+  // if (isScrolled === true) {
+  //   document.getElementById("skills").classList.add("animate")
+  // }
   if (data) {
     var skillmessage = data.skillmessage;
     var education = data.education.map(function (education) {
@@ -8,30 +22,38 @@ const Resume = ({ data }) => {
         <div key={education.school}>
           <h3>{education.school}</h3>
           <p className="info">
-            {education.degree} <span>&bull;</span>
-            <em className="date">{education.graduated}</em>
+            {education.degree}
+
+            {/*<em className="date">{education.graduated}</em>
           </p>
-          <p>{education.description}</p>
+          <p>{education.description}</p> */}
+          </p>
         </div>
       );
     });
-    var work = data.work.map(function (work) {
-      return (
-        <div key={work.company}>
-          <h3>{work.company}</h3>
-          <p className="info">
-            {work.title}
-            <span>&bull;</span> <em className="date">{work.years}</em>
-          </p>
-          <p>{work.description}</p>
-        </div>
-      );
-    });
+    // var work = data.work.map(function (work) {
+    //   return (
+    //     <div key={work.company}>
+    //       <h3>{work.company}</h3>
+    //       <p className="info">
+    //         {work.title}
+    //         <span>&bull;</span> <em className="date">{work.years}</em>
+    //       </p>
+    //       <p>{work.description}</p>
+    //     </div>
+    //   );
+    // });
     var skills = data.skills.map(function (skills) {
-      var className = "bar-expand " + skills.name.toLowerCase();
+      var className = isScrolled
+        ? "bar-expand " + skills.name.toLowerCase().replace(/ /g, "")
+        : "bar-expand no-skill";
       return (
         <li key={skills.name}>
-          <span style={{ width: skills.level }} className={className}></span>
+          <span
+            id="skills"
+            style={{ width: skills.level }}
+            className={className}
+          ></span>
           <em>{skills.name}</em>
         </li>
       );
@@ -54,7 +76,7 @@ const Resume = ({ data }) => {
         </div>
       </div>
 
-      <div className="row work">
+      {/* <div className="row work">
         <div className="three columns header-col">
           <h1>
             <span>Work</span>
@@ -62,7 +84,7 @@ const Resume = ({ data }) => {
         </div>
 
         <div className="nine columns main-col">{work}</div>
-      </div>
+      </div> */}
 
       <div className="row skill">
         <div className="three columns header-col">

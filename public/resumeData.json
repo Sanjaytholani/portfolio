@@ -1,46 +1,41 @@
 {
   "main": {
-    "name": "Sonny Sangha",
-    "occupation": "CEO of PAPA",
-    "description": "I eat, sleep and breathe React",
+    "name": "Sanjay Tholani",
+    "occupation": "Full Stack Developer",
+    "description": "Code,Cofee and Sleep",
     "image": "profilepic.jpg",
-    "bio": "Hi there! I am Sonny! You might also know me as PAPA React. I've been coding for over 10 years now. As a Full Stack developer I've worked both with startups and large corporations to help build & scale their companies. Along the journey I realised my passion existed in helping others excel and pursue their dreams as upcoming developers. With this passion, I have now trained thousand's of developers across the globe. Through live coaching sessions on Youtube, I have accumulated several MILLION views demonstrating how to apply developer skills in a range of cool builds and challenges. I deliver REAL VALUE by teaching REAL WORLD projects to help students enter the world of web development. You’ll get hands-on experience and learn the skills that are required to succeed in the real-world in this community.",
-    "contactmessage": "Get in touch with me to be a part of the PAPA fam!",
-    "email": "papareact.team@gmail.com",
-    "phone": "+44 1234567899",
+    "bio": "My name is Sanjay, I'm a Full Stack ReactJS Developer. Currently I'm pursuing Bachelor's Degree, Electronics and Computer Engineering.I have experience in MERN stack and interested in learning new technologies like PWA and also mobile app development. Apart from coding I am interested in sports like cricket and video games. Contact me for any collabrations for any MERN stack or JavaScript projects.",
+    "contactmessage": "Get in touch",
+    "email": "sanjaytholani.m@gmail.com",
+    "phone": "+91 9500124790",
     "address": {
-      "street": "123 Dev Lane",
-      "city": "London",
-      "state": "Devosphere",
-      "zip": "W3B D3V"
+      "street": "Kodambakkam",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "zip": "600024"
     },
-    "website": "https://www.papareact.com/course",
-    "resumedownload": "http://papareact.com",
+    "website": "",
+    "resumedownload": "https://srv-store6.gofile.io/download/JHCTwP/Sanjay%20Tholani%20M.pdf",
     "social": [
       {
-        "name": "youtube",
-        "url": "https://www.youtube.com/channel/UCqeTj_QAnNlmt7FwzNwHZnA",
-        "className": "fa fa-youtube"
-      },
-      {
         "name": "facebook",
-        "url": "https://www.facebook.com/sonny.sangha.3",
-        "className": "fa fa-facebook"
+        "url": "https://www.facebook.com/sanjay.tholani/",
+        "className": "fa fa-facebook faicon"
       },
       {
         "name": "linkedin",
-        "url": "https://www.linkedin.com/in/saajansangha",
-        "className": "fa fa-linkedin"
+        "url": "https://www.linkedin.com/in/sanjay-tholani-m-896392184/",
+        "className": "fa fa-linkedin faicon"
       },
       {
         "name": "instagram",
-        "url": "https://www.instagram.com/ssssangha/",
-        "className": "fa fa-instagram"
+        "url": "https://www.instagram.com/sanju.jspy/",
+        "className": "fa fa-instagram faicon"
       },
       {
         "name": "github",
-        "url": "https://github.com/PapaReact",
-        "className": "fa fa-github"
+        "url": "https://github.com/Sanjaytholani",
+        "className": "fa fa-github faicon"
       }
     ]
   },
@@ -48,10 +43,8 @@
     "skillmessage": "My Programming Language Proficiency",
     "education": [
       {
-        "school": "University of Kent - UK",
-        "degree": "Bachelor's Degree, Computer Science",
-        "graduated": "July 2016",
-        "description": "Graduated with First Class Honours"
+        "school": "Vellore Institute Of Technology",
+        "degree": "Bachelor's Degree, Electronics and Computer Engineering"
       }
     ],
     "work": [
@@ -65,11 +58,11 @@
     "skills": [
       {
         "name": "ReactJs",
-        "level": "100%"
+        "level": "90%"
       },
       {
         "name": "Python",
-        "level": "85%"
+        "level": "75%"
       },
       {
         "name": "Git",
@@ -77,33 +70,28 @@
       },
       {
         "name": "JavaScript",
-        "level": "99%"
+        "level": "80%"
       },
       {
         "name": "Web Development",
-        "level": "95%"
+        "level": "80%"
       }
     ]
   },
   "portfolio": {
     "projects": [
       {
-        "title": "Snapchat Clone (React JS)",
+        "title": "Amazon Clone (React JS)",
         "category": "",
-        "image": "snapchat.jpg",
-        "url": "https://youtu.be/1kGISk5ft2w"
+        "image": "amazon.jpg",
+        "url": "https://clone-e7542.web.app/"
       },
-      {
-        "title": "Gmail Clone (React JS)",
-        "category": "",
-        "image": "gmail.jpg",
-        "url": "https://youtu.be/b7nrXjS6Dqs"
-      },
+
       {
         "title": "LinkedIn Clone (React JS)",
         "category": "",
         "image": "linkedin.jpg",
-        "url": "https://youtu.be/QaYts9sPmcY"
+        "url": "https://linkedin-936ab.web.app/"
       }
     ]
   },

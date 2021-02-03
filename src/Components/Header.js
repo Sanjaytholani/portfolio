@@ -44,16 +44,16 @@ const Header = ({ data }) => {
               Resume
             </a>
           </li>
-          <li>
+          {/* <li>
             <a className="smoothscroll" href="#portfolio">
               Works
             </a>
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <a className="smoothscroll" href="#testimonials">
               Testimonials
             </a>
-          </li>
+          </li> */}
           <li>
             <a className="smoothscroll" href="#contact">
               Contact
@@ -65,11 +65,14 @@ const Header = ({ data }) => {
       <div className="row banner">
         <div className="banner-text">
           <h1 className="responsive-headline">
-            <TypeWriter typing={0.5}>{name ? `I'm ${name}.` : null}</TypeWriter>
+            <TypeWriter typing={0.47}>
+              {name ? `I'm ${name}.` : null}
+            </TypeWriter>
           </h1>
           <h3>
-            Based in {city}. <span>{occupation}</span>. {description}.
+            Based in {city}. <span>{occupation}</span>.
           </h3>
+          <h3>{description}.</h3>
           <hr />
           <ul className="social">{networks}</ul>
         </div>

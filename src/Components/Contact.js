@@ -17,7 +17,8 @@ const Contact = ({ data }) => {
     var contactMessage = data.contactmessage;
   }
 
-  const submitForm = () => {
+  const submitForm = (e) => {
+    e.preventDefault();
     window.open(
       `mailto:${contactEmail}?subject=${encodeURIComponent(
         subject
@@ -25,6 +26,10 @@ const Contact = ({ data }) => {
         email
       )}): ${encodeURIComponent(message)}`
     );
+    setEmail("");
+    setMessage("");
+    setSubject("");
+    setName("");
   };
 
   return (
@@ -103,7 +108,11 @@ const Contact = ({ data }) => {
               </div>
 
               <div>
-                <button onClick={submitForm} type="submit" className="submit">
+                <button
+                  onClick={(e) => submitForm(e)}
+                  type="submit"
+                  className="submit"
+                >
                   Submit
                 </button>
               </div>
